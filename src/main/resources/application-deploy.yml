@@ -1,0 +1,4 @@
+spring.r2dbc:
+  url: r2dbc:postgresql://localhost:5432/postgres?currentSchema=people
+  username: postgres
+  password: root

@@ -1,0 +1,12 @@
+To test the app, you can start a PostgreSQL containerized database in the project's directory:
+
+[source,bash]
+----
+docker run -it --rm -e POSTGRES_PASSWORD=root -p5432:5432 -v ./data:/docker-entrypoint-initdb.d postgres:15-alpine
+----
+
+Run the app and try the different endpoints:
+
+* `curl localhost:8080/hibernate`
+* `curl localhost:8080/spring`
+* `curl localhost:8080/jooq`
